@@ -30,8 +30,12 @@ h1 {
    }
 }
 .container {
-    margin: 3rem auto 1.5rem auto;
-    padding: 0 12px;
+    /* margin: 3rem auto 1.5rem auto;
+    padding: 0 12px; */
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
     width: 500px;
 }
 @media (max-width: 575px) {
@@ -84,6 +88,10 @@ input[type="text"]::placeholder {
     color: #9f9a91;
     font-size: 14px;
 }
+.tab:hover{
+    cursor: pointer;
+}
+
 .tab li {
     padding: 1rem;
     width: 100%;
@@ -220,4 +228,7 @@ input[type="text"]::placeholder {
 }
 .checkbox input:checked ~ span::after {
     opacity: 1;
+}
+.notZero{
+    color: #000 !important;
 }
